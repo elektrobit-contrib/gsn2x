@@ -1,8 +1,8 @@
 G1:
   text: |
-   Test
-   - [DuckDuckGo](https://www.duckduckgo.com)
-   - [Yahoo](https://www.yahoo.com)
+    Test
+    - [DuckDuckGo](https://www.duckduckgo.com)
+    - [Yahoo](https://www.yahoo.com)
   url: https://www.bing.com
   layer2:
      - "[DuckDuckGo](https://www.duckduckgo.com)"
