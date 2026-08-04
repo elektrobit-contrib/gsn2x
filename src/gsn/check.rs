@@ -155,7 +155,7 @@ fn check_cycles<'a>(
             format!(
                 "C04: Cycle detected at element {}. Cycle is {}.",
                 found,
-                &ring.join(" -> "),
+                ring.join(" -> "),
             ),
         );
         Err(())

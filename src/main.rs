@@ -387,7 +387,7 @@ fn add_missing_nodes_and_modules(
     render_options: &mut RenderOptions,
 ) {
     let mut add_nodes = vec![];
-    for (_, node) in nodes.iter() {
+    for node in nodes.values() {
         let ref_nodes: Vec<_> = node
             .supported_by
             .iter()
@@ -765,7 +765,7 @@ pub(crate) fn copy_and_prepare_stylesheets(
                     format!(
                         "Could not copy stylesheet from {} to {}",
                         css_path.display(),
-                        &out_path.display()
+                        out_path.display()
                     )
                 })?;
             }
